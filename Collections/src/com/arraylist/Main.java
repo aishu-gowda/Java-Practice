@@ -24,7 +24,7 @@ public class Main {
 		 l.display();
 		 System.out.println("_____________________________");
 		 System.out.println("sorting by price");
-		 l.sorting();
-		 l.display();
+//		 l.sorting();
+//		 l.display();
 	}
 }

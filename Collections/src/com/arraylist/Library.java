@@ -61,28 +61,31 @@ public class Library {
    }
    void sort()
    {
-	   Collections.sort(list, new Comparator<Book>()
-	   {
-
-		@Override
-		public int compare(Book o1, Book o2) {
-			
-			return o1.name.compareTo(o2.name);
-		}  
-	   });
+	   Comparator<Book> c = (b1,b2)->(b1.id<b2.id)?-1:(b1.id<b2.id)?1:0;
+	   Collections.sort(list,c);
+//	   Collections.sort(list, new Comparator<Book>()
+//	   {
+//
+//		@Override
+//		public int compare(Book o1, Book o2) {
+//			
+//			return o1.name.compareTo(o2.name);
+//		}  
+//	   });
+//   }
    }
    void sorting()
    {
-	   Collections .sort(list, new Comparator<Book>()
-			   {
-		          public int compare(Book b1,Book b2)
-		          {
-		        	  return (int) (b1.getPrice()-b2.getPrice());
-		        	  
-		          }
-		          
-		          
-			   });
+//	   Collections .sort(list, new Comparator<Book>()
+//			   {
+//		          public int compare(Book b1,Book b2)
+//		          {
+//		        	  return (int) (b1.getPrice()-b2.getPrice());
+//		        	  
+//		          }
+//		          
+//		          
+//			   });
 		   
 	   
    }
